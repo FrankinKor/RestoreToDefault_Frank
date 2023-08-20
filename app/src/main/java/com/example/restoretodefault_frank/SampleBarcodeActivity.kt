@@ -44,6 +44,10 @@ class SampleBarcodeActivity : AppCompatActivity() {
                 if (position < barcodeNames.size) {
                     barcodeNameText.text = barcodeNames[position]
                 }
+
+                // 페이지가 변경될 때 이미지 크기 초기화
+                resetImageSize()
+
             }
             override fun onPageScrollStateChanged(state: Int) {
                 super.onPageScrollStateChanged(state)
@@ -62,18 +66,24 @@ class SampleBarcodeActivity : AppCompatActivity() {
         val zoomOutButton = findViewById<View>(R.id.zoomOutButton)
 
         zoomInButton.setOnClickListener {
-            scaleImage(1.1f) // 예시로 20% 확대
+            scaleImage(1.1f) // 예시로 10% 확대
         }
 
         zoomOutButton.setOnClickListener {
-            scaleImage(0.9f) // 예시로 20% 축소
+            scaleImage(0.9f) // 예시로 10% 축소
         }
+
     }
 
     private fun scaleImage(scaleFactor: Float) {
         val newScale = imageViewPager.scaleX * scaleFactor
-        imageViewPager.scaleX = newScale.coerceIn(0.1f, 5.0f)
-        imageViewPager.scaleY = newScale.coerceIn(0.1f, 5.0f)
+        imageViewPager.scaleX = newScale.coerceIn(0.1f, 1.7f)
+        imageViewPager.scaleY = newScale.coerceIn(0.1f, 1.7f)
+    }
+
+    private fun resetImageSize() {
+        imageViewPager.scaleX = 1.0f
+        imageViewPager.scaleY = 1.0f
     }
 }
 
