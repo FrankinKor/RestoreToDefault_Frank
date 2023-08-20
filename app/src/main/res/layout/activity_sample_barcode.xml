@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/imageViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageIndicator"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginVertical="170dp"
+        android:layout_marginTop="197dp"
+        android:layout_marginBottom="142dp" />
+
+    <me.relex.circleindicator.CircleIndicator3
+        android:id="@+id/imageIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="#1E88E5"/>
+
+
+    <TextView
+        android:id="@+id/barcodeNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/imageIndicator"
+        android:layout_marginBottom="50dp"
+        android:gravity="center_horizontal"
+        android:textSize="35sp"
+        android:textStyle="bold"/>
+
+<!--    <Button-->
+<!--        android:id="@+id/zoomOutButton"-->
+<!--        android:backgroundTint="@color/gray"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_alignBottom="@id/zoomInButton"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginEnd="13dp"-->
+<!--        android:layout_marginBottom="28dp"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="10dp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:text="-" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/zoomInButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="15dp"-->
+<!--        android:layout_marginBottom="57dp"-->
+<!--        android:backgroundTint="@color/gray"-->
+<!--        android:text="+"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="15sp"-->
+<!--        android:textStyle="bold" />-->
+
+    <TextView
+        android:id="@+id/zoomInButton"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="110dp"
+        android:background="@drawable/gray_square"
+        android:gravity="center"
+        android:text="+"
+        android:textSize="30dp"
+        android:textColor="@color/black"/>
+
+
+    <TextView
+        android:id="@+id/zoomOutButton"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/gray_square"
+        android:gravity="center"
+        android:text="-"
+        android:textSize="30dp"
+        android:textColor="@color/black"/>
+
+
+</RelativeLayout>
