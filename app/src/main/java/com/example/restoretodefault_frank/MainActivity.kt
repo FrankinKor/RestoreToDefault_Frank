@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.moveToSampleBarcode
+import kotlinx.android.synthetic.main.activity_main.toNewland
 import kotlinx.android.synthetic.main.activity_main.toZebra
 
 class MainActivity : AppCompatActivity() {
@@ -19,8 +20,10 @@ class MainActivity : AppCompatActivity() {
         toZebra.setOnClickListener {
             val myIntent = Intent(this, ZebraMainActivity::class.java)
             startActivity(myIntent)
-
-
+        }
+        toNewland.setOnClickListener {
+            val myIntent = Intent(this, NewlandMain::class.java)
+            startActivity(myIntent)
         }
     }
 }

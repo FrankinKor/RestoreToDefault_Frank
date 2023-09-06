@@ -36,6 +36,17 @@
 
         </activity>
 
+        <activity
+            android:name=".NewlandMain"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".NewlandSettingDetail"
+            android:exported="false">
+
+        </activity>
+
     </application>
 
 </manifest>

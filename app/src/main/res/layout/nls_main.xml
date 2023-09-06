@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ZebraMainActivity">
+    tools:context=".NewlandMain">
 
     <ListView
-        android:id="@+id/zbrListView"
+        android:id="@+id/nlsListView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

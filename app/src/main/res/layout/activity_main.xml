@@ -99,6 +99,7 @@
                     android:layout_width="150dp"
                     android:layout_height="145dp"
                     android:src="@drawable/nls_logo"
+                    android:id="@+id/toNewland"
                     android:scaleType="centerInside"
                     android:background="@color/white"/>
 
