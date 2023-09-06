@@ -10,6 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/imageIndicator"
         android:layout_alignParentTop="true"
+
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="100dp"
         android:layout_marginTop="165dp"
@@ -27,12 +28,13 @@
         android:id="@+id/barcodeNameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_above="@+id/imageIndicator"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-medium"
         android:gravity="center_horizontal"
         android:textSize="23dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
 <!--    <Button-->
 <!--        android:id="@+id/zoomOutButton"-->
@@ -65,6 +67,7 @@
 <!--        android:textSize="15sp"-->
 <!--        android:textStyle="bold" />-->
 
+
     <TextView
         android:id="@+id/zoomInButton"
         android:layout_width="35dp"
@@ -73,14 +76,13 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="110dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="109dp"
         android:background="@drawable/gray_square"
         android:gravity="center"
         android:text="+"
-        android:textSize="26dp"
-        android:textColor="@color/black"/>
-
+        android:textColor="@color/black"
+        android:textSize="26dp" />
 
     <TextView
         android:id="@+id/zoomOutButton"
