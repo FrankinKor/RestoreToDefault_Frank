@@ -17,21 +17,48 @@ class SampleBarcodeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sample_barcode)
         val imageIds = listOf(
-            R.raw.code128,
-            R.raw.ean13,
-            R.raw.itf,
-            R.raw.upca,
-            R.raw.upce,
-            R.raw.code39,
-            R.raw.code93,
-            R.raw.qrcode,
-            R.raw.dm,
-            R.raw.pdf417,
+            R.raw.sample1,
+            R.raw.sample2,
+            R.raw.sample3,
+            R.raw.sample4,
+            R.raw.sample5,
+            R.raw.sample6,
+            R.raw.sample7,
+            R.raw.sample8,
+            R.raw.sample9,
+            R.raw.sample10,
+            R.raw.sample11,
+            R.raw.sample12,
+            R.raw.sample13,
+            R.raw.sample14,
+            R.raw.sample15,
+            R.raw.sample16,
+            R.raw.sample17,
+            R.raw.sample18,
+            R.raw.sample19,
+            R.raw.sample20,
+            R.raw.sample21,
+            R.raw.sample22,
+            R.raw.sample23,
+            R.raw.sample24,
+
+
+
+//            R.raw.code128,
+//            R.raw.ean13,
+//            R.raw.itf,
+//            R.raw.upca,
+//            R.raw.upce,
+//            R.raw.code39,
+//            R.raw.code93,
+//            R.raw.qrcode,
+//            R.raw.dm,
+//            R.raw.pdf417,
             R.raw.gs1dm,
             R.raw.gs1code128
 
         )
-        val barcodeNames = listOf("Code 128", "EAN-13","ITF\n(Interleaved 2of5)", "UPC-A", "UPC-E", "Code 39", "Code 93", "QR Code", "Data Matrix","PDF417","GS1-DataMatrix", "GS1-Code128")
+        val barcodeNames = listOf("","","","","","","","","","","","","","","","","","","","","","","","","GS1-DataMatrix","GS1-Code128",)
 
         val adapter = ImageViewPagerAdapter(barcodeNames, imageIds)
         imageViewPager.adapter = adapter
@@ -77,8 +104,8 @@ class SampleBarcodeActivity : AppCompatActivity() {
 
     private fun scaleImage(scaleFactor: Float) {
         val newScale = imageViewPager.scaleX * scaleFactor
-        imageViewPager.scaleX = newScale.coerceIn(0.1f, 1.7f)
-        imageViewPager.scaleY = newScale.coerceIn(0.1f, 1.7f)
+        imageViewPager.scaleX = newScale.coerceIn(0.1f, 1.4f)
+        imageViewPager.scaleY = newScale.coerceIn(0.1f, 1.4f)
     }
 
     private fun resetImageSize() {

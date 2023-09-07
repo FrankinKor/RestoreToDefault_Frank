@@ -12,9 +12,9 @@
         android:layout_alignParentTop="true"
 
         android:layout_centerHorizontal="true"
-        android:layout_marginHorizontal="100dp"
-        android:layout_marginTop="165dp"
-        android:layout_marginBottom="143dp" />
+        android:layout_marginHorizontal="70dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginBottom="130dp" />
 
     <me.relex.circleindicator.CircleIndicator3
         android:id="@+id/imageIndicator"
