@@ -11,7 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RestoreToDefault_Frank"
+        android:largeHeap="true"
         tools:targetApi="31">
+
+
         <activity
             android:name=".SampleBarcodeActivity"
             android:exported="false" />
@@ -20,7 +23,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -28,6 +30,7 @@
         <activity
             android:name=".ZebraMainActivity"
             android:exported="false">
+
         </activity>
 
         <activity
@@ -43,6 +46,17 @@
 
         <activity
             android:name=".NewlandSettingDetail"
+            android:exported="false">
+
+        </activity>
+
+        <activity
+            android:name=".HoneywellMain"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".HoneywellSettingDetail"
             android:exported="false">
 
         </activity>

@@ -9,43 +9,41 @@ import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
-import com.example.restoretodefault_frank.zbrdatas.NlsSetting
-import kotlinx.android.synthetic.main.activity_zebra_setting_detail.zbrZoomInButton
-import kotlinx.android.synthetic.main.activity_zebra_setting_detail.zbrZoomOutButton
-import kotlinx.android.synthetic.main.nls_setting_detail.nlsZoomInButton
-import kotlinx.android.synthetic.main.nls_setting_detail.nlsZoomOutButton
-import kotlinx.android.synthetic.main.nls_setting_item.nlsSettingTitle
+import com.example.restoretodefault_frank.zbrdatas.HnwSetting
+import kotlinx.android.synthetic.main.hnw_setting_detail.hnwSettingTitle
+import kotlinx.android.synthetic.main.hnw_setting_detail.hnwZoomInButton
+import kotlinx.android.synthetic.main.hnw_setting_detail.hnwZoomOutButton
 import me.relex.circleindicator.CircleIndicator3
 
-class NewlandSettingDetail : AppCompatActivity() {
+class HoneywellSettingDetail : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.nls_setting_detail)
+        setContentView(R.layout.hnw_setting_detail)
 
-        val newlandData = intent.getSerializableExtra("setting") as? NlsSetting
+        val honeywellData = intent.getSerializableExtra("setting") as? HnwSetting
 
-        if(newlandData != null){
-            nlsSettingTitle.text = newlandData.nlsSetting
-            val nlsImageResourceId = newlandData.nlsImageResourceId
+        if(honeywellData != null){
+            hnwSettingTitle.text = honeywellData.hnwSetting
+            val hnwImageResourceId = honeywellData.hnwImageResourceId
 
             //ViewPager 설정
-            val viewPager = findViewById<ViewPager2>(R.id.newlandViewPager)
-            val imageAdapter = NewlandSettingDetail.ImagePagerAdapter(this, nlsImageResourceId)
+            val viewPager = findViewById<ViewPager2>(R.id.honeywellViewPager)
+            val imageAdapter = HoneywellSettingDetail.ImagePagerAdapter(this, hnwImageResourceId)
             viewPager.adapter = imageAdapter
 
             //CircleIndicator 초기화
-            val circleIndicator = findViewById<CircleIndicator3>(R.id.newlnadImageIndicator)
+            val circleIndicator = findViewById<CircleIndicator3>(R.id.honeywellImageIndicator)
             circleIndicator.setViewPager(viewPager)
 
 
             // 이미지 확대 버튼
-            nlsZoomInButton.setOnClickListener {
+            hnwZoomInButton.setOnClickListener {
                 imageAdapter.scaleImage(1.1f) // 예시로 10% 확대
             }
 
             // 이미지 축소 버튼
-            nlsZoomOutButton.setOnClickListener {
+            hnwZoomOutButton.setOnClickListener {
                 imageAdapter.scaleImage(0.9f) // 예시로 10% 축소
             }
 

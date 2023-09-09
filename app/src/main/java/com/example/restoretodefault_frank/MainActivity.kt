@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.moveToSampleBarcode
+import kotlinx.android.synthetic.main.activity_main.toHoneywell
 import kotlinx.android.synthetic.main.activity_main.toNewland
 import kotlinx.android.synthetic.main.activity_main.toZebra
 
@@ -23,6 +24,10 @@ class MainActivity : AppCompatActivity() {
         }
         toNewland.setOnClickListener {
             val myIntent = Intent(this, NewlandMain::class.java)
+            startActivity(myIntent)
+        }
+        toHoneywell.setOnClickListener {
+            val myIntent = Intent(this, HoneywellMain::class.java)
             startActivity(myIntent)
         }
     }

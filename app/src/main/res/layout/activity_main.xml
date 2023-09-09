@@ -64,6 +64,7 @@
                 android:layout_gravity="center_vertical|center_horizontal">
 
                 <ImageButton
+                    android:id="@+id/toHoneywell"
                     android:layout_width="150dp"
                     android:layout_height="145dp"
                     android:src="@drawable/hnw_logo"

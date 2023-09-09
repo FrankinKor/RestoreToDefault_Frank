@@ -104,8 +104,8 @@ class SampleBarcodeActivity : AppCompatActivity() {
 
     private fun scaleImage(scaleFactor: Float) {
         val newScale = imageViewPager.scaleX * scaleFactor
-        imageViewPager.scaleX = newScale.coerceIn(0.1f, 1.4f)
-        imageViewPager.scaleY = newScale.coerceIn(0.1f, 1.4f)
+        imageViewPager.scaleX = newScale.coerceIn(0.1f, 1.6f)
+        imageViewPager.scaleY = newScale.coerceIn(0.1f, 1.6f)
     }
 
     private fun resetImageSize() {
