@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--    tools:context=".ZebraSettingDetailActivity">-->
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/zebexViewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="0dp"/>
+    <!--&lt;!&ndash;        //android:layout_marginTop="165dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        //android:layout_marginBottom="143dp" />&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_alignParentStart="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_alignParentTop="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginHorizontal="100dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginTop="165dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginBottom="142dp" />&ndash;&gt;-->
+
+    <me.relex.circleindicator.CircleIndicator3
+        android:id="@+id/zebexImageIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="#1E88E5"/>
+
+
+    <TextView
+        android:id="@+id/zbxSettingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="어떤 내용?"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/zbxZoomInButton"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="109dp"
+        android:background="@drawable/gray_square"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="@color/black"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/zbxZoomOutButton"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/gray_square"
+        android:gravity="center"
+        android:text="-"
+        android:textSize="26sp"
+        android:textColor="@color/black"/>
+
+    <!--    <ImageButton-->
+    <!--        android:id="@+id/zbrShareButton"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginEnd="7dp"-->
+    <!--        android:layout_marginBottom="150dp"-->
+    <!--        android:src="@drawable/gybutton" />-->
+
+</RelativeLayout>

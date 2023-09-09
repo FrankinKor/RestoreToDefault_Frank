@@ -61,6 +61,28 @@
 
         </activity>
 
+        <activity
+            android:name=".ZebexlMain"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".ZebexSettingDetail"
+            android:exported="false">
+
+        </activity>
+
+        <activity
+            android:name=".UniqMain"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".UniqSettingDetail"
+            android:exported="false">
+
+        </activity>
+
     </application>
 
 </manifest>

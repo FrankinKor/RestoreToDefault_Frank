@@ -129,6 +129,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
+                    android:id="@+id/toUniqvision"
                     android:layout_width="150dp"
                     android:layout_height="145dp"
                     android:src="@drawable/uni_logo"
@@ -159,6 +160,7 @@
                 android:layout_gravity="center_vertical|center_horizontal">
 
                 <ImageButton
+                    android:id="@+id/toZebex"
                     android:layout_width="150dp"
                     android:layout_height="145dp"
                     android:src="@drawable/zbx_logo"
@@ -198,6 +200,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/toDatalogic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="3"

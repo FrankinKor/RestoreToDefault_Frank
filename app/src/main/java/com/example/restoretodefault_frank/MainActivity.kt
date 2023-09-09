@@ -6,6 +6,8 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.moveToSampleBarcode
 import kotlinx.android.synthetic.main.activity_main.toHoneywell
 import kotlinx.android.synthetic.main.activity_main.toNewland
+import kotlinx.android.synthetic.main.activity_main.toUniqvision
+import kotlinx.android.synthetic.main.activity_main.toZebex
 import kotlinx.android.synthetic.main.activity_main.toZebra
 
 class MainActivity : AppCompatActivity() {
@@ -30,5 +32,16 @@ class MainActivity : AppCompatActivity() {
             val myIntent = Intent(this, HoneywellMain::class.java)
             startActivity(myIntent)
         }
+
+        toZebex.setOnClickListener {
+            val myIntent = Intent(this, ZebexlMain::class.java)
+            startActivity(myIntent)
+        }
+
+
+    toUniqvision.setOnClickListener {
+        val myIntent = Intent(this, UniqMain::class.java)
+        startActivity(myIntent)
+    }
     }
 }
