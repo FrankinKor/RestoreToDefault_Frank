@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/singleImageViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/singleImageIndicator"
+        android:layout_alignParentTop="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="70dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginBottom="130dp" />
+
+    <me.relex.circleindicator.CircleIndicator3
+        android:id="@+id/singleImageIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="#92AAC4"/>
+
+
+    <TextView
+        android:id="@+id/singleBarcodeNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/singleImageIndicator"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_horizontal"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/zoomOutButton"-->
+    <!--        android:backgroundTint="@color/gray"-->
+    <!--        android:layout_width="30dp"-->
+    <!--        android:layout_height="30dp"-->
+    <!--        android:layout_alignBottom="@id/zoomInButton"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_marginEnd="13dp"-->
+    <!--        android:layout_marginBottom="28dp"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:textSize="10dp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        android:text="-" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/zoomInButton"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="30dp"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginStart="16dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:layout_marginEnd="15dp"-->
+    <!--        android:layout_marginBottom="57dp"-->
+    <!--        android:backgroundTint="@color/gray"-->
+    <!--        android:text="+"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="15sp"-->
+    <!--        android:textStyle="bold" />-->
+
+
+    <TextView
+        android:id="@+id/singleZoomInButton"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="109dp"
+        android:background="@drawable/gray_square"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="@color/black"
+        android:textSize="26dp" />
+
+    <TextView
+        android:id="@+id/singleZoomOutButton"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/gray_square"
+        android:gravity="center"
+        android:text="-"
+        android:textSize="26dp"
+        android:textColor="@color/black"/>
+
+
+</RelativeLayout>

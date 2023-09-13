@@ -26,7 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_alignParentBottom="true"
-        android:background="#1E88E5"/>
+        android:background="#92AAC4"/>
 
 
     <TextView
@@ -44,35 +44,41 @@
 
     <TextView
         android:id="@+id/nlsZoomInButton"
-        android:layout_width="35dp"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="17dp"
-        android:layout_marginBottom="109dp"
-        android:background="@drawable/gray_square"
-        android:gravity="center"
-        android:text="+"
-        android:textColor="@color/black"
-        android:textSize="26sp" />
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/zoom_in"
+        android:layout_marginBottom="110dp"/>
+
 
     <TextView
         android:id="@+id/nlsZoomOutButton"
-        android:layout_width="35dp"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="60dp"
-        android:background="@drawable/gray_square"
-        android:gravity="center"
-        android:text="-"
-        android:textSize="26sp"
-        android:textColor="@color/black"/>
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/zoom_out"/>
+
+    <ImageButton
+        android:id="@+id/nlsShareButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="170dp"
+        android:background="@drawable/share_icon" />
+
 
     <!--    <ImageButton-->
     <!--        android:id="@+id/zbrShareButton"-->

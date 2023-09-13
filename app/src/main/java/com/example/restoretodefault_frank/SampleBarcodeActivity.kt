@@ -55,7 +55,7 @@ class SampleBarcodeActivity : AppCompatActivity() {
 //            R.raw.dm,
 //            R.raw.pdf417,
             R.raw.gs1dm,
-            R.raw.gs1code128
+            R.raw.samplegs1128
 
         )
         val barcodeNames = listOf("","","","","","","","","","","","","","","","","","","","","","","","","GS1-DataMatrix","GS1-Code128",)
@@ -104,8 +104,8 @@ class SampleBarcodeActivity : AppCompatActivity() {
 
     private fun scaleImage(scaleFactor: Float) {
         val newScale = imageViewPager.scaleX * scaleFactor
-        imageViewPager.scaleX = newScale.coerceIn(0.1f, 1.6f)
-        imageViewPager.scaleY = newScale.coerceIn(0.1f, 1.6f)
+        imageViewPager.scaleX = newScale.coerceIn(0.1f, 1.7f)
+        imageViewPager.scaleY = newScale.coerceIn(0.1f, 1.7f)
     }
 
     private fun resetImageSize() {

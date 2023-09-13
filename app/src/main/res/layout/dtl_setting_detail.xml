@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--    tools:context=".ZebraSettingDetailActivity">-->
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/datalogicViewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="0dp"/>
+    <!--&lt;!&ndash;        //android:layout_marginTop="165dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        //android:layout_marginBottom="143dp" />&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_alignParentStart="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_alignParentTop="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginHorizontal="100dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginTop="165dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginBottom="142dp" />&ndash;&gt;-->
+
+    <me.relex.circleindicator.CircleIndicator3
+        android:id="@+id/datalogicImageIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="#92AAC4"/>
+
+
+    <TextView
+        android:id="@+id/dtlSettingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="어떤 내용?"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dtlZoomInButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/zoom_in"
+        android:layout_marginBottom="110dp"/>
+
+    <TextView
+        android:id="@+id/dtlZoomOutButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/zoom_out"/>
+
+        <ImageButton
+            android:id="@+id/dtlrShareButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="170dp"
+            android:background="@drawable/share_icon" />
+
+</RelativeLayout>

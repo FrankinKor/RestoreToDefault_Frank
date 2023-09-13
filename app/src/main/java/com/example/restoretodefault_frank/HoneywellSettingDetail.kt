@@ -1,11 +1,14 @@
 package com.example.restoretodefault_frank
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
@@ -54,6 +57,20 @@ class HoneywellSettingDetail : AppCompatActivity() {
                     imageAdapter.resetImagesize()
                 }
             })
+
+            val hnwShareButton = findViewById<ImageButton>(R.id.hnwShareButton)
+            hnwShareButton.setOnClickListener {
+                if (honeywellData.hnwUrl.isNotEmpty()) {
+                    val shareIntent = Intent(Intent.ACTION_SEND)
+                    shareIntent.type = "text/plain"
+                    shareIntent.putExtra(Intent.EXTRA_TEXT, honeywellData.hnwUrl)
+                    startActivity(Intent.createChooser(shareIntent, "URL 공유"))
+                } else {
+                    // URL이 비어 있는 경우, "없습니다" 라는 Toast 메시지를 표시합니다.
+                    Toast.makeText(this, "없습니다", Toast.LENGTH_SHORT).show()
+                }
+
+            }
         }
     }
 

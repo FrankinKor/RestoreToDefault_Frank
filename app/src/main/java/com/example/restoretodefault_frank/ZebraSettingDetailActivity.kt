@@ -1,14 +1,18 @@
 package com.example.restoretodefault_frank
 
 import android.content.Context
+import android.content.Intent
 import android.net.wifi.aware.AwareResources
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.view.menu.MenuView.ItemView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager.widget.PagerAdapter
@@ -46,7 +50,6 @@ class ZebraSettingDetailActivity : AppCompatActivity() {
             circleIndicator.setViewPager(viewPager)
 
 
-
             // 이미지 확대 버튼
             zbrZoomInButton.setOnClickListener {
                 imageAdapter.scaleImage(1.1f) // 예시로 10% 확대
@@ -65,7 +68,19 @@ class ZebraSettingDetailActivity : AppCompatActivity() {
                 }
             })
 
+            val zbrShareButton = findViewById<ImageButton>(R.id.zbrShareButton)
+            zbrShareButton.setOnClickListener {
+                if (zebraData.zbrUrl.isNotEmpty()) {
+                    val shareIntent = Intent(Intent.ACTION_SEND)
+                    shareIntent.type = "text/plain"
+                    shareIntent.putExtra(Intent.EXTRA_TEXT, zebraData.zbrUrl)
+                    startActivity(Intent.createChooser(shareIntent, "URL 공유"))
+                } else {
+                    // URL이 비어 있는 경우, "없습니다" 라는 Toast 메시지를 표시합니다.
+                    Toast.makeText(this, "없습니다", Toast.LENGTH_SHORT).show()
+                }
 
+            }
         }
     }
     class ImagePagerAdapter(private val context: Context, private val imageResources: List<Int>) :

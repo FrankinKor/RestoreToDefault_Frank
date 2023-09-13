@@ -5,5 +5,6 @@ import java.io.Serializable
 class NlsSetting (
     val nlsSetting: String,
     val nlsDescription: String,
-    val nlsImageResourceId: List<Int>
+    val nlsImageResourceId: List<Int>,
+    val nlsUrl: String
 ) : Serializable

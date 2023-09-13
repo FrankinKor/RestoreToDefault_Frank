@@ -8,5 +8,6 @@ import java.io.Serializable
 class ZbrSetting(
     val zbrSetting: String,
     val zbrDescription: String,
-    val zbrImageResourceId: List<Int>
+    val zbrImageResourceId: List<Int>,
+    val zbrUrl: String
 ) : Serializable
